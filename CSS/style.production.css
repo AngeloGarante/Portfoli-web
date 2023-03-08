@@ -5,7 +5,14 @@
 * Browsers: last 4 version
 */
 
-/*font-family: 'Baloo 2',cursive;*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;/* this is important for all css */
+}
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -13,8 +20,7 @@
 }
 
 body {
-    background-color: #fff5d7;
-    /* i just wanted to practise !important it gives priority to a style not based on the normal hierarchy*/
+    background-color: #40506c;
     font-family: 'Baloo 2', sans-serif;
     font-weight: 400;
 }
@@ -25,7 +31,7 @@ header {
 }
 
 a {
-    color: #357b70;
+    color: #35367b;
 }
 
 a:hover {
@@ -34,68 +40,53 @@ a:hover {
 }
 
 a:visited {
-    color: #05676e;
+    color: #61e122;
 }
 
 a:active {
 
-    color: #489c79;
+    color: #ecf63b;
 }
 
 button {
     border: none;
+    display: inline-block;
     font-family: inherit;
-    background-color: #357b70;
-    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #94dbe0;
+    color: #fff;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
 }
 
 .button {
     border: none;
     display: inline-block;
     font-family: inherit;
-    background-color: #357b70;
-    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #94dbe0;
+    color: #fff;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: 0.2s opacity;
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
 }
 
-button {
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    background-color: #357b70;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    -webkit-transition: 0.2s opacity;
-    -o-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-}
 
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-    cursor: pointer;
-    opacity: 0.8;
+    cursor: pointer; /* lets the mouse appears as a hand when hovering ver the button */
+    opacity: 0.8; /* reduces the opacity by 80% */
 }
 
 
@@ -219,7 +210,7 @@ button:focus,
 }
 
 .grid_item {
-    background-color: #565b5a;
+    background-color: #509297;
 }
 
 .grid__item:last-child {
@@ -350,4 +341,45 @@ button:focus,
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
     animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.form-contact {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+  
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input,textarea{
+    width: 100%;
+    padding:10px;
+    outline:0;
+    border: 1px solid #fff;
+    color:#fff,;
+    background:transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0px;
+    color:#fff;
+    cursor:text;
 }
