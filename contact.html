@@ -31,7 +31,7 @@
                     <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
                 </li>
                 <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
                 </li>
             </ul>
         </nav>
@@ -42,18 +42,18 @@
    
         <div class="form-contact">
           
-            <form action="request-contact" onsubmit="alert('Thanks for Contacting')" method="post" id="contact-form" >
+            <form action="https://formsubmit.co/angelogarante@outlook.com"  method="POST"  >
               <div class="input-group"> 
                  <label class="standard-label" for="my-email">Email: </label>
-                <input id="my-email" required>
+                <input  name="email" required>
             </div>
             <div class="input-group"> 
-                <label class="standard-label" for="my-tel">Telephone: </label>
-                <input id="my-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <label class="standard-label" for="my-tel">Telephone: (Optional)</label>
+                <input name="phone" >
             </div>
                 <div class="input-group"> 
                 <label class="standard-label" for="my-message">Message: </label>
-                <textarea id="my-message" maxlength="240" required></textarea>
+                <textarea maxlength="240" required name="message"></textarea>
             </div>
             <div class="input-group">
                 <h1>Contact Angelo Garante</h1>
